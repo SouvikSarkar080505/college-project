@@ -19,7 +19,7 @@ export function Header({ title }: HeaderProps) {
             AD
           </div>
           <div className="hidden md:block">
-            <p className="text-sm font-medium">Dr. Admin</p>
+            <p className="text-sm font-medium">Mr. Admin</p>
             <p className="text-xs text-gray-500">Administrator</p>
           </div>
         </div>
