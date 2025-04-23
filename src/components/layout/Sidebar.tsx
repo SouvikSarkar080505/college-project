@@ -25,7 +25,7 @@ export function Sidebar() {
       <div className="flex items-center justify-between p-4 border-b border-gray-200">
         {!collapsed && (
           <Link to="/dashboard" className="flex items-center space-x-2">
-            <span className="text-hospital-700 font-bold text-xl">MedLink</span>
+            <span className="text-hospital-700 font-bold text-xl">MediHost</span>
           </Link>
         )}
         <Button 
