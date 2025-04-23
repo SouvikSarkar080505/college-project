@@ -11,18 +11,18 @@ import { Badge } from "@/components/ui/badge";
 export default function OPDQueue() {
   const [searchQuery, setSearchQuery] = useState("");
   
-  // Mock patient queue data
+  
   const initialPatients = [
-    { id: "P001", name: "John Smith", age: 45, department: "Cardiology", status: "In Progress", waitTime: "10 min", priority: "Normal" },
-    { id: "P002", name: "Emma Wilson", age: 32, department: "Neurology", status: "Waiting", waitTime: "25 min", priority: "Normal" },
-    { id: "P003", name: "Michael Brown", age: 58, department: "Orthopedics", status: "Waiting", waitTime: "40 min", priority: "Normal" },
-    { id: "P004", name: "Sophia Garcia", age: 7, department: "Pediatrics", status: "Next", waitTime: "5 min", priority: "Urgent" },
-    { id: "P005", name: "James Johnson", age: 63, department: "Ophthalmology", status: "Waiting", waitTime: "35 min", priority: "Normal" },
-    { id: "P006", name: "Olivia Martinez", age: 28, department: "Dermatology", status: "Completed", waitTime: "0 min", priority: "Normal" },
-    { id: "P007", name: "Robert Taylor", age: 51, department: "ENT", status: "In Progress", waitTime: "15 min", priority: "Normal" },
-    { id: "P008", name: "Ava Anderson", age: 36, department: "Gynecology", status: "Waiting", waitTime: "45 min", priority: "Normal" },
-    { id: "P009", name: "William Thomas", age: 42, department: "Urology", status: "Waiting", waitTime: "50 min", priority: "Normal" },
-    { id: "P010", name: "Isabella White", age: 9, department: "Pediatrics", status: "Waiting", waitTime: "30 min", priority: "High" },
+    { id: "P001", name: "Patient1", age: 45, department: "Cardiology", status: "In Progress", waitTime: "10 min", priority: "Normal" },
+    { id: "P002", name: "Patient2", age: 32, department: "Neurology", status: "Waiting", waitTime: "25 min", priority: "Normal" },
+    { id: "P003", name: "Patient3", age: 58, department: "Orthopedics", status: "Waiting", waitTime: "40 min", priority: "Normal" },
+    { id: "P004", name: "Patient4", age: 7, department: "Pediatrics", status: "Next", waitTime: "5 min", priority: "Urgent" },
+    { id: "P005", name: "Patient5", age: 63, department: "Ophthalmology", status: "Waiting", waitTime: "35 min", priority: "Normal" },
+    { id: "P006", name: "Patient6", age: 28, department: "Dermatology", status: "Completed", waitTime: "0 min", priority: "Normal" },
+    { id: "P007", name: "Patient7", age: 51, department: "ENT", status: "In Progress", waitTime: "15 min", priority: "Normal" },
+    { id: "P008", name: "Patient8", age: 36, department: "Gynecology", status: "Waiting", waitTime: "45 min", priority: "Normal" },
+    { id: "P009", name: "Patient9", age: 42, department: "Urology", status: "Waiting", waitTime: "50 min", priority: "Normal" },
+    { id: "P010", name: "Patient10", age: 9, department: "Pediatrics", status: "Waiting", waitTime: "30 min", priority: "High" },
   ];
   
   const [patients, setPatients] = useState(initialPatients);
