@@ -31,7 +31,7 @@ export default function Login() {
             <div className="w-12 h-12 bg-hospital-100 rounded-full flex items-center justify-center mb-2">
               <Hospital className="h-6 w-6 text-hospital-700" />
             </div>
-            <CardTitle className="text-2xl text-center">MedLink Hospital System</CardTitle>
+            <CardTitle className="text-2xl text-center">MedHost Hospital System</CardTitle>
             <CardDescription className="text-center">
               Enter your credentials to sign in
             </CardDescription>
