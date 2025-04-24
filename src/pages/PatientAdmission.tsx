@@ -12,18 +12,18 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 export default function PatientAdmission() {
   const [searchQuery, setSearchQuery] = useState("");
   
-  // Mock patient admission data
+  
   const initialPatients = [
-    { id: "PA001", name: "John Smith", age: 45, gender: "Male", admissionDate: "2023-04-18", ward: "General", room: "101", bed: "B001", diagnosis: "Cardiac Arrhythmia", doctor: "Dr. Phillips", status: "Admitted" },
-    { id: "PA002", name: "Emma Wilson", age: 32, gender: "Female", admissionDate: "2023-04-19", ward: "General", room: "102", bed: "B004", diagnosis: "Appendicitis", doctor: "Dr. Martinez", status: "Admitted" },
-    { id: "PA003", name: "Michael Brown", age: 58, gender: "Male", admissionDate: "2023-04-15", ward: "ICU", room: "201", bed: "B005", diagnosis: "Stroke", doctor: "Dr. Johnson", status: "Critical" },
-    { id: "PA004", name: "Sophia Garcia", age: 7, gender: "Female", admissionDate: "2023-04-20", ward: "ICU", room: "201", bed: "B006", diagnosis: "Severe Pneumonia", doctor: "Dr. Williams", status: "Stable" },
-    { id: "PA005", name: "James Johnson", age: 63, gender: "Male", admissionDate: "2023-04-10", ward: "General", room: "103", bed: "B015", diagnosis: "Hip Fracture", doctor: "Dr. Davis", status: "Recovering" },
-    { id: "PA006", name: "Isabella White", age: 9, gender: "Female", admissionDate: "2023-04-17", ward: "Pediatric", room: "301", bed: "B008", diagnosis: "Acute Asthma", doctor: "Dr. Anderson", status: "Stable" },
-    { id: "PA007", name: "Olivia Martinez", age: 28, gender: "Female", admissionDate: "2023-04-19", ward: "Maternity", room: "401", bed: "B011", diagnosis: "Pregnancy Complications", doctor: "Dr. Taylor", status: "Stable" },
-    { id: "PA008", name: "Ava Anderson", age: 36, gender: "Female", admissionDate: "2023-04-20", ward: "Maternity", room: "402", bed: "B013", diagnosis: "Postpartum Care", doctor: "Dr. White", status: "Recovering" },
-    { id: "PA009", name: "William Thomas", age: 42, gender: "Male", admissionDate: "2023-04-16", ward: "General", room: "104", bed: "B016", diagnosis: "Kidney Infection", doctor: "Dr. Brown", status: "Recovering" },
-    { id: "PA010", name: "Robert Taylor", age: 51, gender: "Male", admissionDate: "2023-04-14", ward: "General", room: "105", bed: "B017", diagnosis: "Diabetic Ketoacidosis", doctor: "Dr. Thomas", status: "Stable" },
+    { id: "PA001", name: "Patient 1", age: 45, gender: "Male", admissionDate: "2023-04-18", ward: "General", room: "101", bed: "B001", diagnosis: "Cardiac Arrhythmia", doctor: "Dr. 1", status: "Admitted" },
+    { id: "PA002", name: "Patient 2", age: 32, gender: "Female", admissionDate: "2023-04-19", ward: "General", room: "102", bed: "B004", diagnosis: "Appendicitis", doctor: "Dr. 2", status: "Admitted" },
+    { id: "PA003", name: "Patient 3", age: 58, gender: "Male", admissionDate: "2023-04-15", ward: "ICU", room: "201", bed: "B005", diagnosis: "Stroke", doctor: "Dr. 3", status: "Critical" },
+    { id: "PA004", name: "Patient 4", age: 7, gender: "Female", admissionDate: "2023-04-20", ward: "ICU", room: "201", bed: "B006", diagnosis: "Severe Pneumonia", doctor: "Dr. 4", status: "Stable" },
+    { id: "PA005", name: "Patient 5", age: 63, gender: "Male", admissionDate: "2023-04-10", ward: "General", room: "103", bed: "B015", diagnosis: "Hip Fracture", doctor: "Dr. 5", status: "Recovering" },
+    { id: "PA006", name: "Patient 6", age: 9, gender: "Female", admissionDate: "2023-04-17", ward: "Pediatric", room: "301", bed: "B008", diagnosis: "Acute Asthma", doctor: "Dr. 6", status: "Stable" },
+    { id: "PA007", name: "Patient 7", age: 28, gender: "Female", admissionDate: "2023-04-19", ward: "Maternity", room: "401", bed: "B011", diagnosis: "Pregnancy Complications", doctor: "Dr. 7", status: "Stable" },
+    { id: "PA008", name: "Patient 8", age: 36, gender: "Female", admissionDate: "2023-04-20", ward: "Maternity", room: "402", bed: "B013", diagnosis: "Postpartum Care", doctor: "Dr. 8", status: "Recovering" },
+    { id: "PA009", name: "Patient 9", age: 42, gender: "Male", admissionDate: "2023-04-16", ward: "General", room: "104", bed: "B016", diagnosis: "Kidney Infection", doctor: "Dr. 9", status: "Recovering" },
+    { id: "PA010", name: "Patient 10", age: 51, gender: "Male", admissionDate: "2023-04-14", ward: "General", room: "105", bed: "B017", diagnosis: "Diabetic Ketoacidosis", doctor: "Dr. 10", status: "Stable" },
   ];
 
   // Mock discharged patients
