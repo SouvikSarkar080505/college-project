@@ -16,7 +16,7 @@ export default function Login() {
     e.preventDefault();
     setIsLoading(true);
     
-    // For demo purposes, we're using a timeout to simulate authentication
+    
     setTimeout(() => {
       setIsLoading(false);
       navigate("/dashboard");
