@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Bed, Clock, FileText } from "lucide-react";
 
 export default function Dashboard() {
-  // Sample data for dashboard metrics
+  
   const metrics = [
     { 
       title: "OPD Queue", 
@@ -43,7 +43,7 @@ export default function Dashboard() {
   return (
     <MainLayout title="Dashboard">
       <div className="grid gap-6">
-        {/* Stats Cards */}
+        {          }
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           {metrics.map((metric, i) => (
             <Card key={i}>
@@ -63,7 +63,7 @@ export default function Dashboard() {
           ))}
         </div>
 
-        {/* Recent Activity */}
+        {           }
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <Card className="col-span-2">
             <CardHeader>
@@ -94,7 +94,7 @@ export default function Dashboard() {
             </CardContent>
           </Card>
 
-          {/* Notifications */}
+          {          }
           <Card>
             <CardHeader>
               <CardTitle>Notifications</CardTitle>
